@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import ChatFeed from "./components/ChatFeed";
 import AnimatedButton from "./components/AnimatedButton";
 import Image from "next/image";
+import VideoBackground from "./components/video-background";
 
 export default function Home() {
   const [isChatVisible, setIsChatVisible] = useState(false);
@@ -53,6 +54,7 @@ export default function Home() {
 
   return (
     <AnimatePresence mode="wait">
+      <VideoBackground isVisible={isChatVisible} />
       {!isChatVisible ? (
         <div className="min-h-screen bg-gray-50 flex flex-col">
           {/* Top Navigation */}
@@ -85,7 +87,7 @@ export default function Home() {
 
           {/* Main Content */}
           <main className="flex-1 flex flex-col items-center justify-center p-6">
-            <div className="w-full max-w-[640px] bg-white border border-gray-200 shadow-sm overflow-hidden">
+            <div className="w-2/3 bg-white border border-gray-200 shadow-sm overflow-hidden">
               <div className="w-full h-12 bg-white border-b border-gray-200 flex items-center px-4">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-red-500" />

@@ -113,7 +113,7 @@ export default function ChatBlock({
     <AnimatePresence mode="sync">
       {isVisible && (
         <motion.div
-          className="flex flex-row h-dvh w-dvw fixed top-0 left-0 z-50 bg-white"
+          className="flex flex-row h-dvh w-2/3 fixed top-0 left-1/6 z-50 bg-white"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

@@ -300,7 +300,7 @@ export default function ChatFeed({ initialMessage, onClose }: ChatFeedProps) {
       </motion.nav>
       <main className="flex-1 flex flex-col items-center p-6">
         <motion.div
-          className="w-full max-w-[1280px] bg-white border border-gray-200 shadow-sm rounded-lg overflow-hidden"
+          className="w-2/3 bg-white border border-gray-200 shadow-sm rounded-lg overflow-hidden"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3 }}
